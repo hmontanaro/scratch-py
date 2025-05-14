@@ -1,0 +1,5 @@
+# Auto-detect text files and normalize to LF in repo
+* text=auto eol=lf
+# Windows batch files require CRLF
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
