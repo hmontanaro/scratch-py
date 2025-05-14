@@ -35,6 +35,39 @@ Once inside the container, you can:
     - View results inline, similar to Jupyter notebooks
     - Access variables across cells within the same file
 
+    # New Project and Environment Setup Scripts
+
+    This repository contains a bash scripts for setting up new Python projects with virtual environments:
+
+    ## new.sh
+
+    A utility script that creates a new Python project directory with a virtual environment to play around with
+
+    ### Usage:
+
+    ```bash
+    source ./new.sh <project_name>
+    
+    # If no project name is provided, a default name will be used (e.g., "scratch-XXX")
+    ```
+
+    This will:
+    1. Create a new directory with the specified project name
+    2. Set up a Python virtual environment inside that directory
+    3. Install basic development packages
+    4. Create a minimal project structure
+
+    Example:
+    ```bash
+    source ./new.sh my_new_project
+    ```
+
+    Later on, to activate the `venv` environment, you can use the following shorthand
+
+    ```bash
+    source ./activate
+    ```
+
 ## Customization
 
 You can customize the devcontainer by editing the `.devcontainer/devcontainer.json` file and/or the associated Dockerfile.
